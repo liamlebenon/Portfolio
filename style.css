@@ -105,6 +105,7 @@ nav {
 .skills {
     background-image: url("images/skills-bg.png");
     height: 20rem;
+    margin-top: -5px;
 }
 
 .skills h2 {

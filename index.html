@@ -11,18 +11,18 @@
 </head>
 <body>
     <header id="navBar">
-        <nav>
-            <p><a href="#home">Home</a></p>
-            <p><a href="#skills">Skills</a></p>
-            <p><a href="#portfolio">Portfolio</a></p>
-            <p><a href="#contact">Contact</a></p>
-            <img src="images/close-menu.png"  id="hideNavBtn" onclick="closeNav()" alt="close menu button">
+        <nav id="nav">
+            <p class="navOption"><a href="#home">Home</a></p>
+            <p class="navOption"><a href="#skills">Skills</a></p>
+            <p class="navOption"><a href="#portfolio">Portfolio</a></p>
+            <p class="navOption"><a href="#contact">Contact</a></p>
+            <img src="images/icons/close-menu.png"  id="hideNavBtn" alt="close menu button">
         </nav>
     </header>
         
 
     <section class="landing" id="home">
-        <figure class="menuButtonContainer"><img class="menuButton" onclick="changeNav()" id="menuIcon" src="images/menu-button.png" alt="menu icon"></figure>
+        <figure class="menuButtonContainer"><img class="menuButton" id="menuIcon" src="images/icons/menu-test.png" alt="menu icon"></figure>
         <h2 class="name">Liam Lebenon</h2>
         <h2 class="title">Web Designer</h2>
 
@@ -31,31 +31,33 @@
     <section class="skills" id="skills">
         <h2>Key Skills</h2>
         <div class="languages">
-            <figure class="language html"><img src="images/html-logo.png" alt="HTML Logo"><figcaption>HTML5</figcaption></figure>
-            <figure class="language javascript"><img src="images/js-logo.png" alt="JavaScript Logo"><figcaption>JavaScript</figcaption></figure>
-            <figure class="language css"><img src="images/css-logo.png" alt="CSS3 logo"><figcaption>CSS3</figcaption></figure>
-            <figure class="language git"><img src="images/git-logo.png" alt="Git logo"><figcaption>Git</figcaption></figure>
+            <figure class="language html"><a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img src="images/languages/html-logo.png" alt="HTML Logo"><figcaption>HTML5</figcaption></a></figure>          
+            <figure class="language javascript"><a href="https://en.wikipedia.org/wiki/Javascript" target="_blank"><img src="images/languages/js-logo.png" alt="JavaScript Logo"><figcaption>JavaScript</figcaption></a></figure>
+            <figure class="language css"><a href="https://en.wikipedia.org/wiki/CSS3" target="_blank"><img src="images/languages/css-logo.png" alt="CSS3 logo"><figcaption>CSS3</figcaption></a></figure>
+            <figure class="language git"><a href="https://en.wikipedia.org/wiki/Git" target="_blank"><img src="images/languages/git-logo.png" alt="Git logo"><figcaption>Git</figcaption></a></figure>
         </div>
     </section>
 
-    <section class="projects" id="portfolio">
-    <div class="opaque">
-        <h2>Previous Projects</h2>
-        <div class="project-box boxingclub">
-            <figure><a href="https://liamlebenon.github.io/ChampionBoxingClub" target="_blank"><img src="images/boxing.png" class="float-left"></a></figure>
-            <h3>Champion Boxing Club</h3>
-            <p>This website was made for a Codecademy Project and mainly relies on Flexbox to demonstrate responsive design.  The website has been written so that it displays well on most screens.<br>
-                This website is made using only HTML and CSS, and was uploaded to Github using Git Bash for version control.</p>
-        </div>
 
-        <div class="project-box voortrekker">
-            <figure><a href="https://liamlebenon.github.io/VoortrekkerInvest" target="_blank"><img src="images/voortrekker.png" class="float-right"></a></figure>
-            <h3>Voortrekker Investment</h3>
-            <p>This website was also made for a Codecademy Project.  This site was made to test skills in responsive web design as well as practise with element layout on a page. <br>
-                This website was made using HTML, CSS and Git for version control.</p>
+        <section class="projects" id="portfolio">
+        <div class="opaque">
+            <h2>Previous Projects</h2>
+            <div class="project-box boxingclub">
+                <figure><a href="https://liamlebenon.github.io/ChampionBoxingClub" target="_blank"><img src="images/portfolio/boxing.png" class="float-left"></a></figure>
+                <h3>Champion Boxing Club</h3>
+                <p>This website was made for a Codecademy Project and mainly relies on Flexbox to demonstrate responsive design.  The website has been written so that it displays well on most screens.<br>
+                    This website is made using only HTML and CSS, and was uploaded to Github using Git Bash for version control.</p>
+            </div>
+            <div class="project-box voortrekker">
+                <figure><a href="https://liamlebenon.github.io/VoortrekkerInvest" target="_blank"><img src="images/portfolio/voortrekker.png" class="float-right"></a></figure>
+                <h3>Voortrekker Investment</h3>
+                <p>This website was also made for a Codecademy Project.  This site was made to test skills in responsive web design as well as practise with element layout on a page. <br>
+                    This website was made using HTML, CSS and Git for version control.</p>
+            </div>
         </div>
-    </div>
-    </section>
+        </section>
+
+
 
 <script src="script.js"></script>
 </body>

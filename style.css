@@ -21,7 +21,7 @@ a:hover {
 
 h2 {
     font-size: 3rem;
-    color: rgb(156, 0, 0);
+    color: rgb(221, 0, 0);
 }
 
 @media only screen and (max-width: 480px){
@@ -44,14 +44,11 @@ header {
 
 #hideNavBtn {
     width: 3rem;
-}
-
-nav p, #closeNavBtn {
-    padding-top: -100px;
+    margin-right: -3rem;
 }
 
 .menuButton {
-    width: 4rem;
+    width: 5rem;
     padding: 0.5rem;
     float: right;
 }
@@ -78,17 +75,39 @@ nav {
 }
 
 @media only screen and (max-width: 1024px){
-    nav {
+    #nav {
         width: 100%;
         font-size: 1.5rem;
         min-width: 0;
+        display: flex;
+        height: 30rem;
+        flex-direction: column;
+    }
+
+    #hideNavBtn {
+        margin: 0;
+        width: 5rem;
+    }
+
+    nav p {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid white;
+        align-items: center;
+        font-size: 4rem;
+    }
+
+    header {
+        height: 30rem;
+        background-color: rgba(0, 0, 0, 0.9);
     }
 }
 
 /* Landing */
 
 .landing {
-    background-image: url("images/landing.png");
+    background-image: url("images/backgrounds/landing.png");
     height: 60rem;
     background-size: cover;
 }
@@ -128,7 +147,7 @@ nav {
 
 /* Skills Section */
 .skills {
-    background-image: url("images/skills-bg.png");
+    background-image: url("images/backgrounds/skills-bg.png");
     height: auto;
     margin-top: -5px;
 }
@@ -180,10 +199,13 @@ nav {
 /* Projects */
 
 .projects {
-    background-image: url("images/projects-bg.png");
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("images/backgrounds/bg-test.webp");
     background-size: cover;
     height: 80rem;
+}
+
+.white {
+    color: white;
 }
 
 .project-box {
@@ -191,7 +213,7 @@ nav {
 }
 
 .opaque {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 80rem;
 }
 
@@ -233,10 +255,17 @@ nav {
     float: right;
 }
 
+@media only screen and (max-width: 1024px){
+    .projects img {
+        display: block;
+    }
+
+}
+
 /* Champion boxing Club */
 .boxingclub {
     width: 70%;
-    background-image: url("images/skills-bg.png");
+    background-image: url("images/backgrounds/skills-bg.png");
     float: left;
     margin-left: 3rem;
     border: 2px solid black;
@@ -246,7 +275,7 @@ nav {
 /* Voortrekker */
 .voortrekker {
         width: 70%;
-        background-image: url("images/skills-bg.png");
+        background-image: url("images/backgrounds/skills-bg.png");
         float: right;
         margin-right: 3rem;
         border: 2px solid black;
@@ -256,3 +285,5 @@ nav {
 .voortrekker img {
     margin-right: 0;
 }
+
+

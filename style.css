@@ -9,6 +9,15 @@ html {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:rgb(156, 0, 0)
+}
+
 h2 {
     font-size: 3rem;
     color: rgb(156, 0, 0);
@@ -55,10 +64,17 @@ nav {
     float: right;
     display: inline-flex;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
     align-items: center;
     font-size: 2rem;
     padding-top: 4px;
+}
+
+@media only screen and (max-width: 1024px){
+    nav {
+        width: 100%;
+        font-size: 1.5rem;
+    }
 }
 
 /* Landing */
@@ -82,36 +98,83 @@ nav {
 
 .landing .name {
     color: rgb(156, 0, 0);
+    text-shadow: 2px 2px black;
 }
 
 .landing .title {
     padding-left: 9rem;
 }
 
-@media only screen and (max-width: 768px){
-    .landing h2{
+@media only screen and (max-width: 1024px){
+    .landing h2, .landing .title {
         font-size: 3.5rem;
-        width: 90%;
-        padding-left: 1rem;
-        margin: auto;
+        padding-left: 2rem;
+        min-width: 400px;
     }
 
-    .landing .title{
-        padding-left: 1rem;
-        width: 90%;
+    .menuButtonContainer {
+        z-index: 1;
     }
+
 }
 
 /* Skills Section */
 .skills {
     background-image: url("images/skills-bg.png");
-    height: 20rem;
+    height: auto;
     margin-top: -5px;
 }
 
 .skills h2 {
-    color: rgb(173, 13, 13);
+    color: rgb(182, 0, 0);
     display: flex;
     justify-content: center;
     font-weight: bold;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+    text-shadow: 2px 2px black;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    min-width: 400px;
+    flex-wrap: wrap;
+}
+
+.language {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.skills figcaption {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills img {
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+/* Projects */
+
+.projects {
+    background-color: rgb(228,237,236);
+    height: 80rem;
+}
+
+.projects h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+    color: black
 }

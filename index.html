@@ -21,14 +21,14 @@
     </header>
         
 
-    <section class="landing">
+    <section class="landing" id="home">
         <figure class="menuButtonContainer"><img class="menuButton" onclick="changeNav()" id="menuIcon" src="images/menu-button.png" alt="menu icon"></figure>
         <h2 class="name">Liam Lebenon</h2>
         <h2 class="title">Web Designer</h2>
 
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Key Skills</h2>
         <div class="languages">
             <figure class="language html"><img src="images/html-logo.png" alt="HTML Logo"><figcaption>HTML5</figcaption></figure>
@@ -38,9 +38,23 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="portfolio">
+    <div class="opaque">
         <h2>Previous Projects</h2>
+        <div class="project-box boxingclub">
+            <figure><a href="https://liamlebenon.github.io/ChampionBoxingClub" target="_blank"><img src="images/boxing.png" class="float-left"></a></figure>
+            <h3>Champion Boxing Club</h3>
+            <p>This website was made for a Codecademy Project and mainly relies on Flexbox to demonstrate responsive design.  The website has been written so that it displays well on most screens.<br>
+                This website is made using only HTML and CSS, and was uploaded to Github using Git Bash for version control.</p>
+        </div>
 
+        <div class="project-box voortrekker">
+            <figure><a href="https://liamlebenon.github.io/VoortrekkerInvest" target="_blank"><img src="images/voortrekker.png" class="float-right"></a></figure>
+            <h3>Voortrekker Investment</h3>
+            <p>This website was also made for a Codecademy Project.  This site was made to test skills in responsive web design as well as practise with element layout on a page. <br>
+                This website was made using HTML, CSS and Git for version control.</p>
+        </div>
+    </div>
     </section>
 
 <script src="script.js"></script>

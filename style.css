@@ -24,6 +24,12 @@ h2 {
     color: rgb(156, 0, 0);
 }
 
+@media only screen and (max-width: 480px){
+    body {
+        max-width: 100%;
+    }
+}
+
 /* Header & Nav */
 header {
     background-color: rgb(0, 0, 0);
@@ -117,8 +123,8 @@ nav {
     .menuButtonContainer {
         z-index: 1;
     }
-
 }
+
 
 /* Skills Section */
 .skills {
@@ -174,8 +180,33 @@ nav {
 /* Projects */
 
 .projects {
-    background-color: rgb(228,237,236);
+    background-image: url("images/projects-bg.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
     height: 80rem;
+}
+
+.project-box {
+    margin-bottom: 5rem;
+}
+
+.opaque {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80rem;
+}
+
+.projects h3 {
+    color: rgb(221, 0, 0);
+    text-shadow: 2px 2px black;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.projects p {
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 20px;    
 }
 
 .projects h2 {
@@ -185,5 +216,43 @@ nav {
     flex-wrap: wrap;
     margin-bottom: 5rem;
     padding-top: 3rem;
-    color: black
+    color: rgb(182, 0, 0);
+    text-shadow: 2px 2px black;
+}
+
+.projects img {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Champion boxing Club */
+.boxingclub {
+    width: 70%;
+    background-image: url("images/skills-bg.png");
+    float: left;
+    margin-left: 3rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Voortrekker */
+.voortrekker {
+        width: 70%;
+        background-image: url("images/skills-bg.png");
+        float: right;
+        margin-right: 3rem;
+        border: 2px solid black;
+        border-radius: 5px;
+}
+
+.voortrekker img {
+    margin-right: 0;
 }

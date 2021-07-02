@@ -1,0 +1,115 @@
+/* Universal Styles */
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    color: rgb(156, 0, 0);
+}
+
+/* Header & Nav */
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5rem;
+    height: 3rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+#hideNavBtn {
+    width: 3rem;
+}
+
+nav p, #closeNavBtn {
+    padding-top: -100px;
+}
+
+.menuButton {
+    width: 4rem;
+    padding: 0.5rem;
+    float: right;
+}
+
+.menuButtonContainer {    
+    position: fixed;   
+    width: 100%;
+}
+
+.title {
+    width: 50%;
+    float: left;
+    font-size: 3rem;
+}
+
+nav {
+    float: right;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 4px;
+}
+
+/* Landing */
+
+.landing {
+    background-image: url("images/landing.png");
+    height: 60rem;
+    background-size: cover;
+}
+
+.landing h2 {
+    font-size: 5rem;
+    color: rgb(59, 59, 59);
+    position: relative;
+    top: 6rem;
+    padding-left: 4rem;
+    font-weight: bold;
+    word-spacing: 0.5rem;
+    min-width: 800px;
+}
+
+.landing .name {
+    color: rgb(156, 0, 0);
+}
+
+.landing .title {
+    padding-left: 9rem;
+}
+
+@media only screen and (max-width: 768px){
+    .landing h2{
+        font-size: 3.5rem;
+        width: 90%;
+        padding-left: 1rem;
+        margin: auto;
+    }
+
+    .landing .title{
+        padding-left: 1rem;
+        width: 90%;
+    }
+}
+
+/* Skills Section */
+.skills {
+    background-image: url("images/skills-bg.png");
+    height: 20rem;
+}
+
+.skills h2 {
+    color: rgb(173, 13, 13);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}

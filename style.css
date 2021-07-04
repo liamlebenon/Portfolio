@@ -204,6 +204,17 @@ nav {
     height: 80rem;
 }
 
+.mobileImage {
+    width: 100%;
+    display: none;
+}
+
+.mobileImage img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .white {
     color: white;
 }
@@ -242,7 +253,7 @@ nav {
     text-shadow: 2px 2px black;
 }
 
-.projects img {
+.project-box img {
     width: 50%;
     margin-right: 10px;
 }
@@ -255,12 +266,7 @@ nav {
     float: right;
 }
 
-@media only screen and (max-width: 1024px){
-    .projects img {
-        display: block;
-    }
 
-}
 
 /* Champion boxing Club */
 .boxingclub {
@@ -286,4 +292,28 @@ nav {
     margin-right: 0;
 }
 
+@media only screen and (max-width: 1024px){
+    .mobileImage {
+        display: block;
+        margin-bottom: 1rem;
+    }
 
+    .projects, .opaque{
+        height: 100rem;
+    }
+    .project-box img {
+        display: none;
+        
+    }
+
+    .project-box {
+        width: 90%;
+    }
+
+    .boxingclub, .voortrekker {
+        float: none;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+}

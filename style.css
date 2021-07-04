@@ -223,8 +223,8 @@ nav {
     margin-bottom: 5rem;
 }
 
-.opaque {
-    background-color: rgba(0, 0, 0, 0.4);
+.opaque, .opaque-2 {
+    background-color: rgba(0, 0, 0, 0.6);
     height: 80rem;
 }
 
@@ -266,6 +266,11 @@ nav {
     float: right;
 }
 
+.opaque h2 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
 
 
 /* Champion boxing Club */
@@ -297,6 +302,12 @@ nav {
         display: block;
         margin-bottom: 1rem;
     }
+    
+    .projects {
+        background-image: url("images/backgrounds/bg-test.webp");
+        background-position: center;
+        background-size: cover;
+    }
 
     .projects, .opaque{
         height: 100rem;
@@ -316,4 +327,86 @@ nav {
         margin-bottom: 4rem;
     }
 
+    .projects p {
+        padding: 1.5rem;
+    }
+
+}
+
+/* About Me Section */
+
+.about {
+    background-image: url("images/backgrounds/about-bg.webp");
+    background-size: cover;
+    height: 60rem;
+}
+
+.about h2 {
+    color: rgb(221, 0, 0);
+    text-align: center;
+    padding-top: 2rem;
+    text-shadow: 2px 2px black;
+}
+
+.opaque-2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60rem;
+}
+
+.about-content {
+    display: flex;
+    width: 80%;
+    margin: 5rem auto;
+    align-items: center;
+}
+
+.portrait {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+.about-content p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+@media only screen and (max-width: 1024px){
+    .about .mobileImage {
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        margin: 4rem auto;
+    }
+
+    .about-content {
+        width: 95%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+    .about-content p {
+        font-size: 1.5rem;
+        padding: 15px;
+        
+    }
+    .about{
+        background-image: url("images/backgrounds/about-bg.webp");
+        background-size: cover;
+        background-position: center;
+        height: 110rem;
+        background-repeat: no-repeat;
+    }
+
+    .portrait {
+        display: none;
+    }
+
+    .opaque-2 {
+        height: 110rem;
+    }
 }

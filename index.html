@@ -78,14 +78,38 @@
             </p>
 
         </div>
+        </div>
     </section>
-
-
 
 <script src="script.js"></script>
 </body>
 <footer>
-
-
+<div class="opaque-3">
+    <h2>Contact</h2>
+    <p>For any enquiries or any work you'd like done please feel free to contact me below:</p>
+    <figure><img class="icons" src="images/icons/email.png" alt="email icon"></figure><br>
+    <p><strong>liam.lebenon@gmail.com</strong></p>
+    <div class="socialMedia">
+        <img class="icons-2" src="images/icons/facebook.png" alt="facebook logo">
+        <img class="icons-2" src="images/icons/youtube.png" alt="youtube logo">
+    </div>
+    <h3>Liam Lebenon</h3>
+    <br><br><br>
+    <p>If you'd like me to contact you please leave your details below:</p><br>
+    <div id="form">
+    <form id="clientContact" name="clientContact" action="GET">
+        <label for="userEmail">E-Mail Address:* </label><br>
+        <input type="email" name="userEmail" id="userEmail" required>
+        <br>
+        <label for="userName">First Name:* </label><br>
+        <input type="text" name="userName" id="userName" required>
+        <br>
+        <label for="userNumber">Phone Number:* </label><br>
+        <input type="number" name="userNumber" id="userNumber" required>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Send Details">
+    </form>
+    </div>
+</div>
 </footer>
 </html>

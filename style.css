@@ -6,8 +6,11 @@
 html {
     font-size: 16px;
     font-family: 'Maven Pro', sans-serif;
-    background-color: black;
+    background-image: url(images/backgrounds/landing.png);
+    background-size: cover;
     min-width: fit-content;
+    max-width: 2500px;
+    margin: auto;
 }
 
 a {
